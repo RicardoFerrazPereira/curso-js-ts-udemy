@@ -1,15 +1,48 @@
-// MODO DE FAZER NO DOCUMENTAÇÃO (SITE MDN)
+// MODO DE FAZER NO DOCUMENTAÇÃO (SITE MDN) - Recurso Nativo do Javascript
 
 const h1 = document.querySelector('.container h1'); // Selecionar a tag <h1> dentro da classe "container"
-const data = new Date();
-const opcoes = {
-    dateStyle: 'full',
-    //timeStyle: 'short' // não está funcionando
-}
-h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes);
+const data = new Date();   
+
+h1.innerHTML = data.toLocaleDateString('pt-BR',{ dateStyle: 'full'});  //timeStyle: 'short' // não está funcionando
+
+// MODO DE FAZER COM ARRAY //////////////////////////////////////////////////////////////////////////////////////
+
+// const h1 = document.querySelector('.container h1'); // Selecionar a tag <h1> dentro da classe "container"
+// const data = new Date();   
+
+// const getNomeMes = (numeroMes) => {
+//     const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro',
+//                     'outubro', 'novembro', 'dezembro'];
+//     return meses [numeroMes];
+// }
+
+// const getDiaSemanaTexto = (diaSemana) => {
+//     const diasDaSemana = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+//     return diasDaSemana [diaSemana];
+// };
+
+// const zeroAEsquerda = (num) => {
+//     return num >= 10 ? num : `0${num}`;
+// }
+
+// const criaData = (data) => {
+//     const diaSemana = data.getDay();
+//     const numeroMes = data.getMonth();
+
+//     const nomeDia = getDiaSemanaTexto(diaSemana);
+//     const nomeMes = getNomeMes(numeroMes);
+
+//     return (`${nomeDia}, ${data.getDate()} de ${nomeMes}` +
+//     ` de ${data.getFullYear()}` +
+//     ` ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`)
+// }
+
+// h1.innerHTML = criaData(data);
 
 
-// MODO DE FAZER = DIDÁTICO
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// MODO DE FAZER = Switch/Case
 
 // const h1 = document.querySelector('.container h1'); // Selecionar a tag <h1> dentro da classe "container"
 // const data = new Date();
