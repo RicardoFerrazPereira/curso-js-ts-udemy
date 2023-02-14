@@ -13,6 +13,8 @@ for (let i = 0; i < elementos.length; i++) {
     let { tag, texto } = elementos[i]; // Selecionar
     let tagCriada = document.createElement(tag); // Criar as tags
     // tagCriada.innerHTML = texto; // Adicionar o texto na tag
+    let textoCriado = document.createTextNode(texto); // Criar o texto
+    
     tagCriada.innerText = texto; // Adicionar o texto na tag
     div.appendChild(tagCriada); // Adiciona as "tags" dentro da "div"
 }
