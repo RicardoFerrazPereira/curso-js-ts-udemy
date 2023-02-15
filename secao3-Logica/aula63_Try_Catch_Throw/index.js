@@ -1,13 +1,12 @@
-//
+// 
 // CATCH -> CAPTURA O ERRO
+// THROW -> LANÇA O ERRO
 
-
-// try {
-// console.log(naoExisto);
-// } catch(error) {
-//     console.log('A variável nãoExisto não foi definida');
-//     console.log(error);
-// }
+try {
+    // É executada quando não há erros
+} catch (error) {
+    // É executada quando há erros
+}
 
 const soma = (x, y) => {
     if (typeof x !== 'number' || typeof y !== 'number') {
