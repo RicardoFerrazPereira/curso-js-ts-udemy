@@ -92,7 +92,7 @@ console.log('SETTER -> set')
 
 
 
-// 
+
 function criaPessoa5(nome, sobrenome, altura, peso) { 
     return {
         nome, // chave
