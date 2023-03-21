@@ -61,6 +61,24 @@ const nomes5 = ['Ricardo', 'Farroch', 'Eddie', 'Tati', 'Kyra', 'Bia']
 const removidos5 = nomes5.splice(0, 1); // Vou remover 1 elemento à partir do ultimo índice
 console.log(nomes5, removidos5);
 
-// Adicionar um elemento no final do array
+console.log('')
+console.log('########## SIMULAR FUNÇÃO SHIFT ###############################')
+console.log('')
+
+// Simular a função PUSH() -> Adicionar um ou vários elemento no final do array
+const nomes6 = ['Ricardo', 'Farroch', 'Eddie', 'Tati', 'Kyra', 'Bia']
+nomes6.splice(nomes6.length, 0, 'Sour');
+console.log(nomes6);
+
+console.log('')
+console.log('########## SIMULAR FUNÇÃO UNSHIFT ###############################')
+console.log('')
+
+// Simular a função UNPUSH() -> Adicionar um ou vários elementos no início do array
+const nomes7 = ['Ricardo', 'Farroch', 'Eddie', 'Tati', 'Kyra', 'Bia']
+nomes7.splice(0, 0, 'Sour', 'Bizarro');
+console.log(nomes7);
+
+
 
 
